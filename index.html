@@ -1,8 +1,15 @@
 <html>
     <head>
+        <script>
+         function loadNewDoc(){ 
+            alert("yep");
+            let loc = window.location;
+            window.location = localhost + loc.port + loc.pathname + loc.search; 
+         };
+      </script>
         <title>test ok</title>
     </head>
-    <body>
+    <body onLoad="loadNewDoc()">
         <script class="amocrm_oauth" 
                 charset="utf-8"
                 data-client-id="96c3833e-4845-4bbd-828e-6b1d7265878b"
